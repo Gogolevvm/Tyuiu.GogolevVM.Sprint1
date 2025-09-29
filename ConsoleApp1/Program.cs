@@ -2,13 +2,14 @@
 {
     private static void Main(string[] args)
     {
-        int i = 5;
+        string text = "И поэтому все так произошло";
 
-        double f = 7.5;
+        string[] words = text.Split(new char[] { ' ' });
 
-        double dbl = 10.01;
-
-        Console.WriteLine("i=" + i + "\\f=" + f + "\\dbl=" + dbl);
+        foreach (string s in words)
+        {
+            Console.WriteLine(s);
+        }
 
     }
 }
