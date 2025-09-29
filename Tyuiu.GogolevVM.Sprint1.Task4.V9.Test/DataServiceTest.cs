@@ -8,10 +8,10 @@ namespace Tyuiu.GogolevVM.Sprint1.Task4.V9.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            double x = 1;
-            double y = 1;
+            double x = 120;
+            double y = 30;
             var res = ds.Calculate(x, y);
-            Assert.AreEqual(0, res);
+            Assert.AreEqual(0.091, res);
 
         }
     }

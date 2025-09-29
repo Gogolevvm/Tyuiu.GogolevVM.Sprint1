@@ -5,7 +5,7 @@ namespace Tyuiu.GogolevVM.Sprint1.Task4.V9.Lib
     {
         public double Calculate(double x, double y)
         {
-            var primer = Math.Exp(x*y) / (x - Math.Sqrt(1 + Math.Pow(y,2)));
+            var primer = Math.Log(x*y, 2.71828) / (x - Math.Sqrt(1 + Math.Pow(y,2)));
             var res = Math.Round(primer,3);
             return res;
         }
