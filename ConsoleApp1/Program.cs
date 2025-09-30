@@ -2,14 +2,14 @@
 {
     private static void Main(string[] args)
     {
-        string text = "И поэтому все так произошло";
+        int a = 0, b = 0;
 
-        string[] words = text.Split(new char[] { ' ' });
+        a = Convert.ToInt32(Console.ReadLine());
 
-        foreach (string s in words)
-        {
-            Console.WriteLine(s);
-        }
+        b = Convert.ToInt32(Console.ReadLine());
 
+        int d = 2 * a - b;
+
+        Console.WriteLine("{0}", a);
     }
 }
